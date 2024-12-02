@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://npmcdn.com/parse/dist/parse.min.js"></script>
+    <script src="./consultacep.js"></script>
+    <style>
+        .center-screen {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            min-height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="center-screen">
+        <label>Digite um CEP:</label>
+        <br><br>
+        <input type="search" id="cepsearch" name="cepsearch" placeholder="12345-678" pattern="[0-9]{5}-[0-9]{3}">
+        <br>
+        <input type="submit" value="Procurar" onclick="buscaCep()">
+       
+    </div>
+</body>
+</html>
